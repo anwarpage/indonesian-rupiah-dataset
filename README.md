@@ -1,6 +1,6 @@
 <div align="center">
 
-# Rupiah Banknotes Dataset
+# Indonesian Rupiah Banknotes Dataset
 
 **An open-source Computer Vision dataset of Indonesian Rupiah banknotes (Rp1,000 – Rp100,000).**
 
@@ -14,8 +14,8 @@
   <a href="CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome">
   </a>
-  <a href="https://github.com/anwarpage/rupiah-banknotes-dataset/stargazers">
-    <img src="https://img.shields.io/github/stars/anwarpage/rupiah-banknotes-dataset?style=for-the-badge&color=gold" alt="GitHub Stars">
+  <a href="https://github.com/anwarpage/indonesian-rupiah-dataset/stargazers">
+    <img src="https://img.shields.io/github/stars/anwarpage/indonesian-rupiah-dataset?style=for-the-badge&color=gold" alt="GitHub Stars">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
@@ -86,8 +86,8 @@ print("Dataset path:", path)
 ### 2. Clone Companion Tools & Prepare Splits
 
 ```bash
-git clone https://github.com/anwarpage/rupiah-banknotes-dataset.git
-cd rupiah-banknotes-dataset
+git clone https://github.com/anwarpage/indonesian-rupiah-dataset.git
+cd indonesian-rupiah-dataset
 pip install -r requirements.txt
 
 # Download dataset into ./data
@@ -116,7 +116,7 @@ For a complete EDA + PyTorch walkthrough, open [`examples/rupiah_banknotes_start
 
 ## Community Benchmarks
 
-Trained a model on this dataset? **Submit your results via a Pull Request** (or open a [Benchmark Submission](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/new?template=benchmark_submission.md)) to be featured below!
+Trained a model on this dataset? **Submit your results via a Pull Request** (or open a [Benchmark Submission](https://github.com/anwarpage/indonesian-rupiah-dataset/issues/new?template=benchmark_submission.md)) to be featured below!
 
 | Model | Task | Split | Metric | Params | Code / Notebook | Contributor |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -129,7 +129,7 @@ Trained a model on this dataset? **Submit your results via a Pull Request** (or 
 
 Contributions are welcome — whether you want to share a benchmark notebook, add YOLO bounding-box annotations, or improve the helper scripts.
 
-Please see **[CONTRIBUTING.md](CONTRIBUTING.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)**, or join **[GitHub Discussions](https://github.com/anwarpage/rupiah-banknotes-dataset/discussions)**.
+Please see **[CONTRIBUTING.md](CONTRIBUTING.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)**, or join **[GitHub Discussions](https://github.com/anwarpage/indonesian-rupiah-dataset/discussions)**.
 
 ### Dataset Authors
 
@@ -149,7 +149,7 @@ If this dataset helps your research, thesis, or project, please consider starrin
   title        = {Rupiah Banknotes Dataset (Indonesian Currency)},
   year         = {2025},
   howpublished = {\url{https://www.kaggle.com/datasets/mkaspulanwar/rupiah-banknotes-dataset}},
-  note         = {GitHub: \url{https://github.com/anwarpage/rupiah-banknotes-dataset}}
+  note         = {GitHub: \url{https://github.com/anwarpage/indonesian-rupiah-dataset}}
 }
 ```
 

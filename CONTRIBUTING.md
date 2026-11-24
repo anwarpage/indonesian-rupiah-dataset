@@ -16,7 +16,7 @@ Have you trained a classifier (MobileNetV3, EfficientNet, ResNet, ViT) or detect
 
 ### 3. Contribute New Photos
 - **Do not commit large raw image files directly to GitHub** (this repo stays lightweight).
-- Open a **[Data Contribution Issue](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/new?template=data_contribution.md)** describing the new images (denomination, emission year, lighting/environment, count) and link a temporary archive (Google Drive / Kaggle). Maintainers will verify quality and publish them in the next Kaggle dataset version with full credit!
+- Open a **[Data Contribution Issue](https://github.com/anwarpage/indonesian-rupiah-dataset/issues/new?template=data_contribution.md)** describing the new images (denomination, emission year, lighting/environment, count) and link a temporary archive (Google Drive / Kaggle). Maintainers will verify quality and publish them in the next Kaggle dataset version with full credit!
 - Ensure all contributed photos are **your own original photographs** and contain **no personal/identifying information** (faces, IDs, addresses).
 
 ### 4. Improve Scripts & Documentation
