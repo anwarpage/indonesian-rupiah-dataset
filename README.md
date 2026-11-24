@@ -2,37 +2,37 @@
 
 # Indonesian Rupiah Banknotes Dataset
 
-**An open-source Computer Vision dataset of Indonesian Rupiah banknotes (Rp1,000 – Rp100,000).**
+<p>An open-source Computer Vision dataset of <b>1,392 real-world Indonesian Rupiah banknote images</b> (Rp1,000 – Rp100,000).</p>
 
 <p>
   <a href="https://www.kaggle.com/datasets/mkaspulanwar/rupiah-banknotes-dataset">
-    <img src="https://img.shields.io/badge/Kaggle-Download%20Dataset-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Download on Kaggle">
+    <img src="https://img.shields.io/badge/Kaggle-Download%20Dataset%20(3.74%20GB)-0284c7?style=flat&logo=kaggle&logoColor=white&labelColor=0f172a" alt="Download on Kaggle">
   </a>
   <a href="https://www.kaggle.com/code/mkaspulanwar/rupiah-banknotes-eda-pytorch-resnet18-starter">
-    <img src="https://img.shields.io/badge/Notebook-Starter%20EDA-20BEFF?style=for-the-badge&logo=jupyter&logoColor=white" alt="Starter Notebook">
-  </a>
-  <a href="CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome">
+    <img src="https://img.shields.io/badge/Notebook-Starter%20EDA-0f766e?style=flat&logo=jupyter&logoColor=white&labelColor=0f172a" alt="Starter Notebook">
   </a>
   <a href="https://github.com/anwarpage/indonesian-rupiah-dataset/stargazers">
-    <img src="https://img.shields.io/github/stars/anwarpage/indonesian-rupiah-dataset?style=for-the-badge&color=gold" alt="GitHub Stars">
+    <img src="https://img.shields.io/github/stars/anwarpage/indonesian-rupiah-dataset?style=flat&logo=github&label=Stars&labelColor=0f172a&color=334155" alt="GitHub Stars">
+  </a>
+  <a href="CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/PRs-Welcome-334155?style=flat&labelColor=0f172a" alt="PRs Welcome">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
+    <img src="https://img.shields.io/badge/License-MIT%20%2F%20CC%20BY--NC--SA%204.0-334155?style=flat&labelColor=0f172a" alt="License">
   </a>
 </p>
 
 <p>
-  <a href="#overview">Overview</a> •
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#community-benchmarks">Benchmarks</a> •
-  <a href="#contributing">Contributing</a> •
+  <a href="#overview">Overview</a> &nbsp;·&nbsp;
+  <a href="#quick-start">Quick Start</a> &nbsp;·&nbsp;
+  <a href="#community-benchmarks">Benchmarks</a> &nbsp;·&nbsp;
+  <a href="#contributing">Contributing</a> &nbsp;·&nbsp;
   <a href="#citation">Citation</a>
 </p>
 
 <br>
 
-<img src="assets/cover_collage.jpg" alt="Rupiah Banknotes Dataset Preview" width="100%">
+<img src="assets/cover_collage.jpg" alt="Indonesian Rupiah Banknotes Dataset Preview" width="100%">
 
 </div>
 
