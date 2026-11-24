@@ -2,7 +2,7 @@
 
 # Rupiah Banknotes Dataset
 
-**An open-source, community-driven Computer Vision dataset of Indonesian Rupiah banknotes (Rp1,000 – Rp100,000).**
+**An open-source Computer Vision dataset of Indonesian Rupiah banknotes (Rp1,000 – Rp100,000).**
 
 <p>
   <a href="https://www.kaggle.com/datasets/mkaspulanwar/rupiah-banknotes-dataset">
@@ -26,7 +26,6 @@
   <a href="#overview">Overview</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#community-benchmarks">Benchmarks</a> •
-  <a href="#roadmap">Roadmap</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#citation">Citation</a>
 </p>
@@ -43,13 +42,14 @@
 
 **Rupiah Banknotes Dataset** is an open dataset of **1,392 real-world JPG photographs** (~3.74 GB) of Indonesian Rupiah banknotes across all 7 active paper denominations plus multi-note scenes.
 
-Unlike scraped web collections or synthetic renders, every image was **photographed directly** under varied angles, lighting conditions, folds, and backgrounds — built to support:
+Every image was **photographed directly** under varied angles, lighting conditions, folds, and backgrounds (no synthetic or AI-generated images) — shared freely to support:
 
 - **Assistive Technology:** Mobile & edge currency readers for visually impaired users.
-- **Academic Research & Theses:** Reproducible classification and object detection benchmarks.
+- **Academic Research & Theses:** Reproducible classification and object detection experiments.
 - **Computer Vision Education:** Clean end-to-end pipelines from raw images to deployed models.
 
-> **Lightweight GitHub Repository:** Full image files (**3.74 GB**) are hosted on **[Kaggle Datasets](https://www.kaggle.com/datasets/mkaspulanwar/rupiah-banknotes-dataset)** for fast downloads and free GPU notebooks. This repository hosts the documentation, download/split scripts, starter notebooks, and community benchmarks.
+> **Where are the image files?**
+> Full image files (**3.74 GB**) are hosted on **[Kaggle Datasets](https://www.kaggle.com/datasets/mkaspulanwar/rupiah-banknotes-dataset)** for fast downloads and free GPU notebooks. This GitHub repository hosts `metadata.csv`, download/split scripts, starter notebooks, and community benchmarks.
 
 ### Class Distribution
 
@@ -64,6 +64,11 @@ Unlike scraped web collections or synthetic renders, every image was **photograp
 | `idr_100000/` | Rp100,000 | 191 | 574.2 MB | Classification |
 | `idr_mix/` | Mixed / multiple notes | 143 | 476.4 MB | Object Detection |
 | **Total** | **8 folders** | **1,392** | **3.74 GB** | |
+
+### Metadata Index (`metadata.csv`)
+
+[`metadata.csv`](metadata.csv) provides a structured index of all **1,392 images** with columns:
+`filepath`, `filename`, `label`, `denomination_idr`, `width`, `height`, and `file_size_kb`.
 
 ---
 
@@ -95,10 +100,9 @@ python scripts/stats.py --source ./data
 python scripts/split_dataset.py --source ./data --output ./splits
 ```
 
-### 3. Train with PyTorch or TensorFlow
+### 3. Train with PyTorch
 
 ```python
-# PyTorch ImageFolder
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
@@ -112,35 +116,22 @@ For a complete EDA + PyTorch walkthrough, open [`examples/rupiah_banknotes_start
 
 ## Community Benchmarks
 
-Trained a model on this dataset? **Submit your results via a Pull Request** (or open a [Benchmark Submission](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/new?template=benchmark_submission.md)) to be featured on the leaderboard!
+Trained a model on this dataset? **Submit your results via a Pull Request** (or open a [Benchmark Submission](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/new?template=benchmark_submission.md)) to be featured below!
 
-| Model | Task | Split (70/15/15) | Metric | Params | Code / Notebook | Contributor |
+| Model | Task | Split | Metric | Params | Code / Notebook | Contributor |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ResNet18 *(Starter)* | 7-Class Classification | 80/20 | *Baseline Pipeline* | 11.7M | [Kaggle Notebook](https://www.kaggle.com/code/mkaspulanwar/rupiah-banknotes-eda-pytorch-resnet18-starter) | [@anwarpage](https://github.com/anwarpage) |
 | *Your Model Here!* | Classification / YOLO | — | — | — | [Submit PR](CONTRIBUTING.md) | *Open for contributions* |
 
 ---
 
-## Roadmap
-
-We are actively growing this dataset with the community:
-
-- [x] **v1.0** — Release 1,392 curated JPG images on Kaggle + lightweight companion repo & starter notebook.
-- [ ] **v1.1** — Community YOLO bounding-box annotations for `idr_mix/` ([#1](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/1)).
-- [ ] **v1.2** — Reproducible classification benchmarks: MobileNetV3, EfficientNet, ViT ([#2](https://github.com/anwarpage/rupiah-banknotes-dataset/issues/2)).
-- [ ] **v2.0** — Expanded 2022 Rupiah emission series, low-light/occluded samples, and Indonesian coin classes.
-
-Have an idea or want to collaborate? Join **[GitHub Discussions](https://github.com/anwarpage/rupiah-banknotes-dataset/discussions)**!
-
----
-
 ## Contributing
 
-Contributions of all kinds are warmly welcomed — whether you're adding new photos, labeling bounding boxes, sharing a Kaggle/Colab notebook, or improving scripts.
+Contributions are welcome — whether you want to share a benchmark notebook, add YOLO bounding-box annotations, or improve the helper scripts.
 
-Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** and our **[Code of Conduct](CODE_OF_CONDUCT.md)** to get started.
+Please see **[CONTRIBUTING.md](CONTRIBUTING.md)** and **[Code of Conduct](CODE_OF_CONDUCT.md)**, or join **[GitHub Discussions](https://github.com/anwarpage/rupiah-banknotes-dataset/discussions)**.
 
-### Maintainers & Original Photographers
+### Dataset Authors
 
 - **M. Kaspul Anwar** ([@anwarpage](https://github.com/anwarpage))
 - **Muhammad Lutfan**
@@ -166,11 +157,6 @@ If this dataset helps your research, thesis, or project, please consider starrin
 
 ## Responsible Use & License
 
-This dataset is released under the **[MIT License](LICENSE)** for academic research, education, and legitimate computer vision applications. It **must not** be used for counterfeiting, fraud, or any illegal financial activity.
+This dataset is shared for academic research, education, and legitimate computer vision applications. It **must not** be used for counterfeiting, fraud, or any illegal financial activity.
 
-<div align="center">
-  <br>
-  <a href="https://blockstream.info/address/bc1q9jc7wnggqhuq7lqx29u49t3pv5ftk5lmwpl6k4" target="_blank">
-    <img src="https://img.shields.io/badge/Support%20This%20Open%20Dataset-Bitcoin-ff9900?style=for-the-badge&logo=bitcoin&logoColor=white&labelColor=333333" alt="Support with Bitcoin">
-  </a>
-</div>
+Code & scripts in this repository are released under the **[MIT License](LICENSE)**; see the Kaggle Dataset page for dataset licensing details.
